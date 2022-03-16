@@ -2,7 +2,7 @@
 using System;
 
 namespace classtask
-{
+{   
     class Program
     {
         static void Main(string[] args)
@@ -46,6 +46,10 @@ namespace classtask
                         break;
                     case 6:
                         Console.WriteLine("Sagolun");
+                        break;
+                    case 7:
+                        Console.WriteLine("7ci metod");
+                        wep.Editing();
                         break;
                     case 0:
                         Console.WriteLine("0ci  metod");

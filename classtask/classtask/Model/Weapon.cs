@@ -6,10 +6,11 @@ namespace classtask.Model
 {
     class Weapon
     {
-        public int bulletCapacity;//gulle tutumu
-        public int countBullet;//daraqdaki gulle sayi
-        public int secondsOfCombDischarge;//daragin bosalma saniyesi
-        public int shootingMode;//atis modu
+        public int bulletCapacity { get; set; }
+        public int countBullet { get; set; }
+        public int secondsOfCombDischarge { get; set; }
+        public int shootingMode { get; set; }
+        
 
         public Weapon(int bulletCapacity,int countBullet,int secondsOfCombDischarge, int shootingMode)
         {
@@ -57,6 +58,15 @@ namespace classtask.Model
                 shootingMode = 3;
                 Console.WriteLine("teklidir");
             }
+        }
+        public void Editing()
+        {
+            Console.WriteLine("tutumu redakte etmek ucun yeni qiymet verin:");
+            bulletCapacity = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("gulle sayini deyismek ucun yeni qiymet verin:");
+            countBullet = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("daragin bosalma saniyesini deyismek ucun yeni qiymet yazin:");
+            secondsOfCombDischarge = Convert.ToInt32(Console.ReadLine());
         }
     }
     
